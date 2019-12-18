@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 //express HBS engine
 hbs.registerPartials(__dirname + '/views/parciales');
 app.set('view engine', 'hbs');
-
+app.engine('hbs', hbs.__express);
 
 
 
