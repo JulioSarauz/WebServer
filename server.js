@@ -5,7 +5,7 @@
 var express = require('express');
 var app = express();
 const hbs = require('hbs');
-const port = (process.env.PORT || '3000');
+const port = process.env.PORT || 1337;
 //llamado a helpers
 require('./hbs/helpers')
 
